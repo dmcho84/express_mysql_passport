@@ -1,26 +1,28 @@
-"use strict";
+'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Category = sequelize.define(
-    "Category",
+    'Category',
     {
       name: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
       },
       identity: {
         type: DataTypes.STRING,
-        allowNull: false
-      }
+        allowNull: false,
+      },
     },
-    {}
+    {},
   );
   Category.associate = function(models) {
     console.log(models);
     Category.belongsTo(models.User, {
       foreignKey: {
-        allowNull: false
-      }
+        allowNull: false,
+      },
     });
+
+    Category.hasMany(models.Board);
     // Category.belongsTo(models.User, {
     //   foreignKey: "userId"
     // });

@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "qwer1234",
+    "password": "비밀번호",
     "database": "database_sample",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "qwer1234",
+    "password": "비밀번호",
     "database": "database_sample",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "qwer1234",
+    "password": "비밀번호",
     "database": "database_sample",
     "host": "127.0.0.1",
     "dialect": "mysql"
